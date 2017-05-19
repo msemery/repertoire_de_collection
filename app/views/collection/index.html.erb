@@ -1,0 +1,6 @@
+<% @collections.each do |c| %>
+
+  <h1><%= c.name %></h1>
+    <p><%= c.content %></p>
+      <%= link_to 'voir', show_collection_path(c.id) %>
+<% end %>
